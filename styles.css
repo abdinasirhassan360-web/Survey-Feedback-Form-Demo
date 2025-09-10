@@ -2,7 +2,7 @@ body {
   font-family: 'Nunito', sans-serif;
   background: #785b23;   /* same as menu background */
   margin: 0;
-  padding: 20px;
+  padding: 40px;
   display: flex;
   justify-content: center;
 }
