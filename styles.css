@@ -59,6 +59,17 @@ input, select, textarea {
   color: white;
 }
 
+.checkbox-group, .radio-group {
+  display: flex;
+  align-items: center;   /* ensures vertical alignment */
+  margin-bottom: 6px;    /* spacing between items */
+}
+
+.checkbox-group input,
+.radio-group input {
+  margin-right: 6px;
+}
+
 button {
   background: #db932c;
   color: #202020;
