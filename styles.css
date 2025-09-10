@@ -1,61 +1,76 @@
-/* Center the whole form */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
+  background: #785b23;   /* same as menu background */
+  margin: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  background: #f4f4f4;
 }
-h1 {
-    text-align: center;
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
+
+header {
+  text-align: center;
+  color: white;  /* white text for header */
+}
+
 form {
-  background: white;
+  background: #202020;   /* dark card background */
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  max-width: 600px;
-  box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 4px 6px 12px rgba(0,0,0,0.6); /* shadow like menu card */
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: white;   /* default text inside form white */
 }
 
-/* Each row uses Flexbox */
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+fieldset {
+  border: 1px solid #db932c; /* accent border */
+  padding: 10px;
+  border-radius: 6px;
 }
 
-.form-row label {
-  flex: 1;
+legend {
+  color: #db932c;  /* category headers (orange like prices) */
+  font-weight: bold;
 }
 
-.form-row input,
-.form-row select,
-.form-row textarea {
-  flex: 2;
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;  /* labels white */
 }
 
-/* Grouped options (checkboxes, radios) */
-.options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #db932c;
+  border-radius: 4px;
+  background: #202020;
+  color: white;
 }
 
 button {
-  padding: 10px 20px;
+  background: #db932c;
+  color: #202020;
   border: none;
-  background: #333;
-  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 4px;
 }
 
 button:hover {
-  background: #555;
+  background: white;
+  color: #202020;
 }
