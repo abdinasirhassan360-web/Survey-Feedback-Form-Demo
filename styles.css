@@ -34,7 +34,7 @@ form {
 }
 
 fieldset {
-  border: 1px solid #db932c; /* accent border */
+  border: 0;
   padding: 10px;
   border-radius: 6px;
 }
