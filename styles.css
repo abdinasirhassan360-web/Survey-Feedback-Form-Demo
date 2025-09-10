@@ -1,14 +1,10 @@
 /* Center the whole form */
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
 body {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px;
+  padding: 20px;
   background: #f4f4f4;
 }
 
