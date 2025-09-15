@@ -1,5 +1,5 @@
 
-/* 🌍 Base page styles */
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -14,7 +14,7 @@ body {
   padding: 2rem;
 }
 
-/* 🟠 Headings & paragraph */
+
 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 40px;       /* same as café "Menu" */
