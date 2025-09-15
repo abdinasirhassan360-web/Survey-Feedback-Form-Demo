@@ -1,9 +1,5 @@
 
-
-      /* ---------------------- */
-      /* Base Page Styling */
-      /* ---------------------- */
-      body {
+body {
         width: 100%;
         height: 100vh;
         margin: 0;
@@ -17,9 +13,6 @@
         padding: 2rem;
       }
 
-      /* ---------------------- */
-      /* Headings */
-      /* ---------------------- */
       h1, p {
         margin: 1em auto;
         text-align: center;
@@ -34,22 +27,16 @@
         font-size: 1.1rem;
       }
 
-      /* ---------------------- */
-      /* Form Container */
-      /* ---------------------- */
       form {
         width: 95%;
         max-width: 500px;
         margin: 2rem auto;
         padding: 1.5rem 2rem;
         background-color: #202020; /* dark card background */
-        border: 3px solid #db932c; /* accent border */
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+        border: none; /* remove gold ring */
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.6); /* shadow only on left + bottom */
       }
 
-      /* ---------------------- */
-      /* Fieldsets & Labels */
-      /* ---------------------- */
       fieldset {
         border: none;
         padding: 1.5rem 0;
@@ -65,9 +52,6 @@
         margin: 0.5rem 0;
       }
 
-      /* ---------------------- */
-      /* Inputs, Textareas, Selects */
-      /* ---------------------- */
       input,
       textarea,
       select {
@@ -91,9 +75,6 @@
         vertical-align: middle;
       }
 
-      /* ---------------------- */
-      /* Submit Button */
-      /* ---------------------- */
       input[type="submit"] {
         display: block;
         width: 60%;
@@ -116,20 +97,18 @@
         padding: 2px;
       }
 
-      /* ---------------------- */
-      /* Responsive Adjustments */
-      /* ---------------------- */
       @media (max-width: 600px) {
         body {
-          padding: 0; /* remove body padding for edge-to-edge form */
+          padding: 0;
         }
 
         form {
-          width: 100%;        /* full width on phones */
+          width: 100%;
           max-width: none;
           margin: 0;
           padding: 1rem;
-          border-radius: 0;   /* sharp edges on mobile */
+          border-radius: 0;
+          box-shadow: 4px 4px 12px rgba(0,0,0,0.6); /* keep left+bottom shadow */
         }
 
         input,
@@ -145,4 +124,3 @@
           height: 3em;
         }
       }
-    
