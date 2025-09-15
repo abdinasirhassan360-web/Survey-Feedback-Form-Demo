@@ -2,8 +2,8 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-color: #202020;
-  color: #f5f6f7;
+  background-color: #785b23; /* page background */
+  color: #ffffff;
   font-family: Tahoma, sans-serif;
   font-size: 16px;
 }
@@ -13,7 +13,7 @@ h1, p {
   margin: 1em auto;
   text-align: center;
   font-size: 30px;
-  color: whitesmoke;
+  color: #ffffff;
 }
 
 /* Flexbox container to center the form */
@@ -21,22 +21,21 @@ h1, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;   /* keeps it centered vertically */
-  background: #1e1e1e;
+  min-height: 80vh;
   padding: 2rem;
 }
 
-/* Main form box */
+/* Main form card */
 form {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #0a0a23;
-  border: 3px solid #3b3b4f;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  background-color: #202020; /* dark card background */
+  border: 3px solid #db932c; /* accent border */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
   padding-bottom: 2em;
 }
 
@@ -44,7 +43,7 @@ form {
 fieldset {
   border: none;
   padding: 1rem 0;
-  border-bottom: 2px solid #3b3b4f;
+  border-bottom: 2px solid #db932c;
 }
 
 fieldset:last-of-type {
@@ -64,14 +63,14 @@ select {
   width: 100%;
   min-height: 2em;
   padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 6px;
+  background-color: #1a1a1a; /* input background */
+  border: 1px solid #db932c; /* accent border */
+  color: #ffffff;
 }
 
-/* Inputs background */
-input, textarea {
-  background-color: #1a1a2e;
-  border: 1px solid #3b3b4f;
-  color: #ffffff;
+textarea::placeholder {
+  color: #cccccc;
 }
 
 .inline {
@@ -88,9 +87,9 @@ input[type="submit"] {
   height: 2.5em;
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: #3b3b4f;
+  background-color: #db932c; /* accent orange */
   border: none;
-  color: white;
+  color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -98,13 +97,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #57576b;
+  background-color: #e6a647; /* lighter orange on hover */
 }
 
 /* File input fix */
 input[type="file"] {
   padding: 1px 2px;
 }
-
-
-
