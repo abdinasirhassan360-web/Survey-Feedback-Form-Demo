@@ -26,6 +26,16 @@ h1 {
 h1 span {
   color: #db932c;        /* accent orange for first word */
 }
+h1 .registration-title {
+  color: white; /* first word */
+  display: block;
+}
+
+h1 .form-title {
+  color: #db932c; /* second word */
+  display: block;
+  margin-top: -50px;
+}
 p {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
