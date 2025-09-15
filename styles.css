@@ -28,15 +28,14 @@ body {
       }
 
       form {
-        width: 95%;
-        max-width: 500px;
-        margin: 2rem auto;
-        padding: 1.5rem 2rem;
-        background-color: #202020; /* dark card background */
-        border: none; /* remove gold ring */
-        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.6); /* shadow only on left + bottom */
-      }
-
+  width: 80%;         /* same as cafe menu */
+  max-width: 700px;   /* same max-width as menu */
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background-color: #202020;
+  border: none;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.6);
+}
       fieldset {
         border: none;
         padding: 1.5rem 0;
