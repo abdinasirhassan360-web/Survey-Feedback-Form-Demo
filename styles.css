@@ -137,7 +137,7 @@ input[type="submit"]:hover {
     margin: 0;
     padding: 1rem;
     border-radius: 0;
-    box-shadow: -4px 4px 12px rgba(0,0,0,0.6); /* keep shadow left+bottom */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.6);
   }
 
   input,
