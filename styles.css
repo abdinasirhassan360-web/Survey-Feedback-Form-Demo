@@ -1,27 +1,46 @@
-/* Add a flexbox container around the form */
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #202020;
+  color: #f5f6f7;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+/* Center heading + intro text */
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+/* Flexbox container to center the form */
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;  /* centers form vertically */
-  background: #1e1e1e; /* subtle background */
+  min-height: 80vh;   /* keeps it centered vertically */
+  background: #1e1e1e;
   padding: 2rem;
 }
 
-/* Style the form itself */
+/* Main form box */
 form {
   width: 60vw;
   max-width: 500px;
   min-width: 300px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #0a0a23; /* same dark background as menu */
-  border: 3px solid #3b3b4f; /* border like the restaurant menu */
+  background-color: #0a0a23;
+  border: 3px solid #3b3b4f;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  padding-bottom: 2em;
 }
 
-/* Keep your existing fieldset, input, etc. */
+/* Fieldset styling */
 fieldset {
   border: none;
   padding: 1rem 0;
@@ -32,6 +51,7 @@ fieldset:last-of-type {
   border-bottom: none;
 }
 
+/* Label and input styles */
 label {
   display: block;
   margin: 0.5rem 0;
@@ -47,12 +67,20 @@ select {
   border-radius: 5px;
 }
 
+/* Inputs background */
 input, textarea {
   background-color: #1a1a2e;
   border: 1px solid #3b3b4f;
   color: #ffffff;
 }
 
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+/* Submit button */
 input[type="submit"] {
   display: block;
   width: 60%;
@@ -66,8 +94,17 @@ input[type="submit"] {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
+  min-width: 300px;
 }
 
 input[type="submit"]:hover {
   background-color: #57576b;
 }
+
+/* File input fix */
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+
+
