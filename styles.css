@@ -27,28 +27,17 @@ p {
 }
 
 /* ---------------------- */
-/* Flexbox Container      */
-/* ---------------------- */
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-  padding: 2rem;
-}
-
-/* ---------------------- */
 /* Form Card              */
 /* ---------------------- */
 form {
-  width: 90%;                /* fluid width for small screens */
-  max-width: 500px;
-  margin: 0 auto;
+  width: 95%;                /* fluid width on smaller screens */
+  max-width: 500px;          /* don’t get too wide */
+  margin: 2rem auto;         /* space above and below */
   padding: 1.5rem 2rem;
   background-color: #202020; /* dark card background */
   border: 3px solid #db932c; /* accent border */
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* subtle soft shadow like café menu */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* soft café shadow */
 }
 
 /* ---------------------- */
@@ -78,7 +67,7 @@ select {
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 6px;
   background-color: #1a1a1a;
   border: 1px solid #db932c;
@@ -104,7 +93,7 @@ input[type="submit"] {
   display: block;
   width: 60%;
   margin: 1.5em auto 0;
-  height: 2.5em;
+  height: 2.8em;
   font-size: 1.1rem;
   font-weight: bold;
   background-color: #db932c;
@@ -128,21 +117,30 @@ input[type="file"] {
 /* ---------------------- */
 @media (max-width: 600px) {
   h1 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  form {
+    width: 100%;       /* take full width */
+    padding: 1rem;     /* reduce padding inside */
+    border-radius: 0;  /* optional: edge-to-edge look on phones */
   }
 
   input,
   textarea,
   select {
-    font-size: 14px;
-    padding: 0.4rem;
+    font-size: 16px;
+    padding: 0.7rem;
   }
 
   input[type="submit"] {
-    width: 100%;    /* button fills container */
+    width: 100%;
+    font-size: 1rem;
+    height: 3em;
   }
 }
+
